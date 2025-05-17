@@ -4,13 +4,17 @@
     <title>Store</title>
     <style>
         #tablica{
-            border: black solid 2px;
+            /* border: black solid 2px; */
             width: 800px;
             height: 50px;
             font-size: large;
         }
         td:hover, tr:hover, th:hover{
             background-color: rgb(152, 149, 149);
+        }
+
+        td, th{
+            border: black solid 2px;
         }
         .doom{
         background-color: rgb(192, 182, 182);
@@ -19,8 +23,8 @@
         table, tr{
             padding: 0;
             margin: 0;
-            border-radius: 15px;
-        }
+            border-collapse: collapse;
+        }  
         td{
             border-radius: 5px;
         }
@@ -55,27 +59,53 @@
     font-size: 30px;
     margin-left: 13%;
 }
+.hidden{
+    border: none;
+}
+
+.hidden:hover{
+    background-color: white;
+}
+
+.white:hover{
+    background-color: white;
+}
+.ultrasign{
+    width: 100px;
+    height: 100px;
+}
+.color8{
+    color: rgb(125, 125, 7);
+}
     </style>
 </head>
 <body>
     <img src="HypixelLogo.png" class="imgichik">
     <div class="divichik">
-        <a href="scroll.html" class="aa">Home</a> 
+        <a href="Hypixel.html" class="aa">Home</a> 
         <a href="https://store.hypixel.net/category/ranks" class="aa">Store</a> 
-        <a href="index.html" class="aa">Play</a>
+        <a href="Play.html" class="aa">Play</a>
      </div>
     <div align="center">
     <table id="tablica">
+        <tr  class="white">
+    <th class="hidden"></th> 
+    <th ><img src="Vip rank.png" alt="" class="ultrasign"> <br> <b class="color8"> Vip rank </b><br></th>
+    <th ><img src="Vip+ rank.png" alt="" class="ultrasign"> <br> <b class="color8"> Vip+ rank </b><br></th>
+    <th ><img src="Mvp rank.png" alt="" class="ultrasign"> <br> <b class="color8"> Mvp rank </b><br></th>
+    <th ><img src="Mvp+ rank.png" alt="" class="ultrasign"> <br> <b class="color8"> Mvp+ rank </b><br></th>
+    <th ><img src="Mvp++ rank.png" alt="" class="ultrasign"> <br> <b class="color8"> Mvp++ rank </b><br></th>
+</tr>
 <tr class="tablica">
-    <td id="tablica" class="doom">Chat prefix</td> 
-    <td id="tablica" class="doom" class="color5"><b class="color1">[VIP]</b> Player</td>
-    <td id="tablica" class="doom" class="color5"><b class="color1">[VIP</b><b class="color6">+</b><b class="color1">]</b> Player</td>
-    <td id="tablica" class="doom" class="color5"><b class="color2">[MVP]</b> Player</td>
-    <td id="tablica" class="doom" class="color5"><b class="color2">[MVP</b><b class="color6">+</b><b class="color2">]</b> Player</td>
-    <td id="tablica" class="doom" class="color5"><b class="color5">[MVP</b><b class="color6">++</b><b class="color5">]</b> Player</td>
+    <th id="tablica" class="doom">Chat prefix</th> 
+    <th id="tablica" class="doom" class="color5"><b class="color1">[VIP]</b> Player</th>
+    <th id="tablica" class="doom" class="color5"><b class="color1">[VIP</b><b class="color6">+</b><b class="color1">]</b> Player</th>
+    <th id="tablica" class="doom" class="color5"><b class="color2">[MVP]</b> Player</th>
+    <th id="tablica" class="doom" class="color5"><b class="color2">[MVP</b><b class="color6">+</b><b class="color2">]</b> Player</th>
+    <th id="tablica" class="doom" class="color5"><b class="color5">[MVP</b><b class="color6">++</b><b class="color5">]</b> Player</th>
 </tr>
 <tr>
-      <td id="tablica" title="Access replays of matches you've recently played">Game Replays <br> (/games) <br> Command</td>
+      <th id="tablica" title="Access replays of matches you've recently played">Game Replays <br> (/games) <br> Command</th>
       <th id="tablica"><img src="galochka.png" class="sign"></th>
       <th id="tablica"><img src="galochka.png" class="sign"></th>
       <th id="tablica"><img src="galochka.png" class="sign"></th>
@@ -83,7 +113,7 @@
       <th id="tablica"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title="Skip the chat cooldown - talk as much as you want">No chat cooldown</td>
+    <th id="tablica" class="doom" title="Skip the chat cooldown - talk as much as you want">No chat cooldown</th>
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
@@ -91,7 +121,7 @@
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Access unique cosmetics as you play Hypixel Minigames">Rank-specific <br>cosmetics</td>
+    <th id="tablica" title="Access unique cosmetics as you play Hypixel Minigames">Rank-specific <br>cosmetics</th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
@@ -99,23 +129,23 @@
     <th id="tablica"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title="Multiply the amount of Event Silver you get while playing Hypixel Minigames">Event Silver Multiplier</td>
-    <td id="tablica" class="doom"> 1,5x</td>
-    <td id="tablica" class="doom">2x</td>
-    <td id="tablica" class="doom">2,5x</td>
-    <td id="tablica" class="doom">3x</td>
-    <td id="tablica" class="doom">3,5x</td>
+    <th id="tablica" class="doom" title="Multiply the amount of Event Silver you get while playing Hypixel Minigames">Event Silver Multiplier</th>
+    <th id="tablica" class="doom"> 1,5x</th>
+    <th id="tablica" class="doom">2x</th>
+    <th id="tablica" class="doom">2,5x</th>
+    <th id="tablica" class="doom">3x</th>
+    <th id="tablica" class="doom">3,5x</th>
 </tr>
 <tr>
-    <td id="tablica" title="Increases the amounts of Housing plots you can have on Hypixel Housing">Housing House <br> Slots</td>
-    <td id="tablica">2</td>
-    <td id="tablica">2</td>
-    <td id="tablica">3</td>
-    <td id="tablica">3</td>
-    <td id="tablica">3</td>
+    <th id="tablica" title="Increases the amounts of Housing plots you can have on Hypixel Housing">Housing House <br> Slots</th>
+    <th id="tablica">2</th>
+    <th id="tablica">2</th>
+    <th id="tablica">3</th>
+    <th id="tablica">3</th>
+    <th id="tablica">3</th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title="Priority Queue to the Hypixel Server when the Server is full">Priority Queue</td>
+    <th id="tablica" class="doom" title="Priority Queue to the Hypixel Server when the Server is full">Priority Queue</th>
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
@@ -123,15 +153,15 @@
     <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Access more wardrobe slots in Hypixel Skyblock Gamemode">Extra Skyblock <br>Wardrobe Slots</td>
-    <td id="tablica">5</td>
-    <td id="tablica">9</td>
-    <td id="tablica">13</td>
-    <td id="tablica">18</td>
-    <td id="tablica">18</td>
+    <th id="tablica" title="Access more wardrobe slots in Hypixel Skyblock Gamemode">Extra Skyblock <br>Wardrobe Slots</th>
+    <th id="tablica">5</th>
+    <th id="tablica">9</th>
+    <th id="tablica">13</th>
+    <th id="tablica">18</th>
+    <th id="tablica">18</th>
 </tr>
 <tr>
-<td id="tablica" class="doom" title="Access Skyblock Quick Crafting menu to save time when Crafting">Skyblock Quick <br>Crafting</td>
+<th id="tablica" class="doom" title="Access Skyblock Quick Crafting menu to save time when Crafting">Skyblock Quick <br>Crafting</th>
 <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
 <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
 <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
@@ -139,7 +169,7 @@
 <th id="tablica" class="doom"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Acquire unique Seasonal cosmetic furniture or Minion Gear">Access Seasonal <br>SkyBlock <br>Salesman</td>
+    <th id="tablica" title="Acquire unique Seasonal cosmetic furniture or Minion Gear">Access Seasonal <br>SkyBlock <br>Salesman</th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
@@ -147,15 +177,15 @@
     <th id="tablica"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom">Extended Replay <br> Access</td>
-    <td id="tablica" class="doom">1 day</td>
-    <td id="tablica" class="doom">2 days</td>
-    <td id="tablica" class="doom">3 days</td>
-    <td id="tablica" class="doom">4 days</td>
-    <td id="tablica" class="doom">4 days</td>
+    <th id="tablica" class="doom">Extended Replay <br> Access</th>
+    <th id="tablica" class="doom">1 day</th>
+    <th id="tablica" class="doom">2 days</th>
+    <th id="tablica" class="doom">3 days</th>
+    <th id="tablica" class="doom">4 days</th>
+    <th id="tablica" class="doom">4 days</th>
 </tr>
 <tr>
-    <td id="tablica" title="Create your own Guilds/Communities in Hypixel">Create Guilds</td>
+    <th id="tablica" title="Create your own Guilds/Communities in Hypixel">Create Guilds</th>
     <th id="tablica"><img src="hrestyk.png" class="sign"></th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
     <th id="tablica"><img src="galochka.png" class="sign"></th>
@@ -163,32 +193,78 @@
     <th id="tablica"><img src="galochka.png" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title=" Allows you to change your plus color through Hypixel Levels"> Change your plus ("+") color</td>
+    <th id="tablica" class="doom" title=" Allows you to change your plus color through Hypixel Levels"> Change your plus ("+") color</th>
+    <th id="tablica" class="doom" > <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="galochka.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Allows you to select the next map that will be played in some Minigames">Game Map Selectors</td>
+    <th id="tablica" title="Allows you to select the next map that will be played in some Minigames">Game Map Selectors</th>
+     <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="galochka.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="galochka.png" alt="" class="sign"></th>   
 </tr>
 <tr>
-    <td id="tablica" class="doom" title=" Allows you to keep track of your achievements"> Achievements Tracking</td>
+    <th id="tablica" class="doom" title=" Allows you to keep track of your achievements"> Achievements Tracking</th>
+        <th id="tablica" class="doom" > <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="galochka.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom" > <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Allows you to teleport anywhere you want by getting and using these scrolls in Hypixel Skyblocks"> SkyBlock Epic Warp Scrolls</td>
+    <th id="tablica" title="Allows you to teleport anywhere you want by getting and using these scrolls in Hypixel Skyblocks"> SkyBlock Epic Warp Scrolls</th>
+         <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="galochka.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title="Showcase unique achievements and stats">Statuses</td>
+    <th id="tablica" class="doom" title="Showcase unique achievements and stats">Statuses</th>
+             <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Play Private Games with Your Friends">Private Games (/party private) Command</td>
+    <th id="tablica" title="Play Private Games with Your Friends">Private Games (/party private) Command</th>
+                 <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title="Hide Your Username from other Players">Nickname (/nick) Command</td>
+    <th id="tablica" class="doom" title="Hide Your Username from other Players">Nickname (/nick) Command</th>
+                 <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" title="Golden Guild Tag for Your Entire Group">Golden Guild Tag</td>
+    <th id="tablica" title="Golden Guild Tag for Your Entire Group">Golden Guild Tag</th>
+                 <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica"> <img src="galochka.png" alt="" class="sign"></th>
 </tr>
 <tr>
-    <td id="tablica" class="doom" title="Access Exclusive In-Game Emojis! :)">Exclusive In-Game Emojis</td>
+    <th id="tablica" class="doom" title="Access Exclusive In-Game Emojis! :)">Exclusive In-Game Emojis</th>
+                 <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="hrestyk.png" alt="" class="sign"></th>
+    <th id="tablica" class="doom"> <img src="galochka.png" alt="" class="sign"></th>
 </tr>
+
     </table>
 </div>
 
